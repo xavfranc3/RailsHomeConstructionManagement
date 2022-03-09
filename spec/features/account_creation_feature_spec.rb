@@ -7,8 +7,8 @@ describe 'account creation' do
 
     fill_in 'Name', with: 'toto'
     fill_in 'Email', with: 'toto@toto.com'
-    fill_in 'Password', with: 'Password123'
-    fill_in 'Password confirmation', with: 'Password123'
+    fill_in 'Password', with: 'Password123', match: :prefer_exact
+    fill_in 'Password confirmation', with: 'Password123', match: :prefer_exact
     fill_in 'Subdomain', with: 'test_subdomain'
     click_button 'Create Account'
 

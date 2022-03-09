@@ -11,6 +11,8 @@ class Account < ApplicationRecord
 
   before_validation :downcase_subdomain
 
+  accepts_nested_attributes_for :owner
+
   private
 
   def downcase_subdomain
