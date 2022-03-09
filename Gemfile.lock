@@ -222,7 +222,7 @@ DEPENDENCIES
   jsbundling-rails
   pg (~> 1.1)
   puma (~> 5.0)
-  rails (~> 7.0.0)
+  rails
   selenium-webdriver
   sprockets-rails
   stimulus-rails
