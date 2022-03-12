@@ -1,4 +1,7 @@
 class AccountsController < ApplicationController
+  before_action :authenticate_user!
+  load_and_authorize_resource
+
   def new
     @account = Account.new
     @account.build_owner
