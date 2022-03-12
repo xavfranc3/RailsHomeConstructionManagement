@@ -18,6 +18,8 @@ gem "puma", "~> 5.0"
 # Devise
 gem 'devise'
 
+gem 'cancancan'
+
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
 
