@@ -6,7 +6,7 @@ class Ability
   def initialize(user)
     user ||= User.new
     if user.super_admin?
-      can :manage, Account, User
+      can :manage, Account
     # elsif user.admin?
     #   can :manage: Project
     # elsif user.staff?
