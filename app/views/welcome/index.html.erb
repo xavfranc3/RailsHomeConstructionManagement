@@ -6,9 +6,6 @@
       <% if !user_signed_in? %>
         <%= link_to 'Sign In', new_user_session_path, class: 'btn btn-primary btn-lg text-center' %>
       <% end %>
-      <% if user_signed_in? && current_user.role == 'super_admin' %>
-        <%= link_to 'Create Account', new_account_path, class: 'btn btn-primary btn-lg text-center'%>
-      <% end %>
     </div>
   </div>
 </div>
