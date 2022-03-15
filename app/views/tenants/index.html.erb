@@ -1,0 +1,9 @@
+<div>
+  <h3 class="text-center">Tenants</h3>
+  <% @tenants.each do |tenant| %>
+    <ol class="tenants">
+      <%= render tenant %>
+    </ol>
+  <% end %>
+  <%= link_to 'New Tenant', new_tenant_path, class: 'btn btn-primary btn-lg text-center m-2' %>
+</div>

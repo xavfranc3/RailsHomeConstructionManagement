@@ -11,7 +11,7 @@ RSpec.describe AppAdmin, type: :model do
 
   describe 'associations' do
     it do
-      should have_many(:tenants).through(:app_admin_tenants)
+      should have_many :tenants
     end
   end
 end

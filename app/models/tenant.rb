@@ -1,6 +1,5 @@
 class Tenant < ApplicationRecord
-  has_many :app_admin_tenants
-  has_many :app_admins, through: :app_admin_tenants
+  belongs_to :creator, class_name: 'AppAdmin', foreign_key: 'creator_id'
 
   validates :name, presence: true
 end

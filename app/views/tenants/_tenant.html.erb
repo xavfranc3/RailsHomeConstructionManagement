@@ -1,0 +1,5 @@
+<li id="tenant-<%= tenant.id %>">
+  <span class="tenant"><%= link_to tenant.name, tenant_path(tenant.id) %></span>
+  <span class="creator"><%= tenant.creator.name %></span>
+  <span class="timestamp"><%= tenant.created_at %></span>
+</li>
