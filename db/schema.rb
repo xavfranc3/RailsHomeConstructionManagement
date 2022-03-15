@@ -14,15 +14,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_15_161717) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "projects", force: :cascade do |t|
-    t.string "name"
-    t.integer "client_id"
-    t.integer "manager_id"
-    t.integer "account_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "tenants", force: :cascade do |t|
     t.string "name"
     t.bigint "creator_id"
