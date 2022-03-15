@@ -3,10 +3,17 @@
     <div class="m-3 text-center">
       <h1>Home Construction Management</h1>
       <p>The perfect tool to manage your construction and renovation projects</p>
-      <% if !user_signed_in? %>
-        <%= link_to 'Sign In', new_user_session_path, class: 'btn btn-primary btn-lg text-center' %>
-      <% end %>
     </div>
+  </div>
+  <div class="border border-2 border-warning mt-4">
+    <% if @tenants %>
+      <% @tenants.each do |tenant| %>
+        <ol class="tenants">
+          <%= render tenant %>
+        </ol>
+      <% end %>
+    <% end %>
+    <%= link_to 'New Tenant', new_tenant_path, class: 'btn btn-primary text-center m-2' %>
   </div>
 </div>
 

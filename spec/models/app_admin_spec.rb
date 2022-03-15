@@ -10,6 +10,8 @@ RSpec.describe AppAdmin, type: :model do
   end
 
   describe 'associations' do
-
+    it do
+      should have_many :tenants
+    end
   end
 end

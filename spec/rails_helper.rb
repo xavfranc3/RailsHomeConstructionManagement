@@ -49,6 +49,8 @@ RSpec.configure do |config|
 
   config.include Rails.application.routes.url_helpers
 
+  config.include Warden::Test::Helpers
+
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
       with.test_framework :rspec

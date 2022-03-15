@@ -1,0 +1,14 @@
+<div class="container mt-2 card border border-primary">
+  <div class="card-body">
+    <h3 class="card-title text-center mb-3 text-primary">New Tenant</h3>
+    <div class="card-text text-primary">
+      <%= simple_form_for @tenant do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :name %>
+        <div class="form-actions">
+          <%= f.button :submit, "Create Tenant", class: 'btn-primary mt-2' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
